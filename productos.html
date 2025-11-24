@@ -1,79 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<title>Agrotech</title>
-<style>
-body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eae2ab;
-    color: #506801;
-    padding: 10px;
-    margin: 10px;
-}
-.navbar {
-    background-color: #858f01;
-}
-.navbar-brand {
-    font-weight: bold;
-    font-size: 24px;
-    color: #ecece4 !important;
-}
-.carousel-item img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    margin: 15px auto;
-    border-radius: 10px;
-    display: block;
-}
-.card {
-    background-color: #184403;
-    color: #eae2ab;
-    width: 900px;
-    margin: 30px auto;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-}
-.card-body img {
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-}
-.card-body h5 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #eae2ab;
-}
-.card-body p {
-    font-size: 16px;
-    color: #eae2ab;
-}
-.btn-primary {
-    background-color: #858f01;
-    border: none;
-}
-.btn-primary:hover {
-    background-color: #6f7801;
-}
-footer {
-    background-color: #184403;
-    color: #eae2ab;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 30px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hambre cero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .navbar{
+            background-color: #858f01;
+        }
+        .navbar-brand{
+            font-weight: bold;
+            color:#ecece4;
+            font-size: 24px;
+        }
+ body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #eae2ab;  
+        margin:0;
+        color:#506801;
+        }
+
+
+.quote-card {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #184403;
+      color: #eae2ab;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+      text-align: center;
+    }
+      .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+ .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .card img {
+      border-radius: 10px 10px 0 0;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      background-color: #184403;
+      color: #eae2ab;
+    }
+
+
+
+
+
+
+
+
+ .btn-primary {
+      background-color: #858f01;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #6f7801;
+    }
+ </style>
 </head>
 <body>
-
-
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" >
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
       <img src="https://media.istockphoto.com/id/1400659573/es/vector/tractor-farm-agricultura-dise%C3%B1o-del-logotipo-ilustraci%C3%B3n-vectorial.jpg?s=612x612&w=0&k=20&c=gRdx0Vv8Est2ehZAmE5i3S8k5BwA1WoW0a5Lkhx8AQw="
@@ -90,77 +106,94 @@ footer {
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active text-light" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="productos.html">Productos</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="distribucion.html">Distribución</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="app.html">App</a></li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link tactive text-light" href="productos.html">Productos</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active text-light" href="distribucion.html">Distribución</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" href="sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" href="contacto.html">Contacto</a>
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="app.html">App</a>
+          </li>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
 
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
-  </div>
-
-
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://alimentandolaciencia.esciencia.es/wp-content/uploads/2020/05/huerto_port.jpg" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Innovación Agrícola</h5>
-        <p>Impulsando el futuro sostenible del campo.</p>
+<div class="container my-4"></div>
+    <p>Nosotros nos preocupamos por ti y tu salud en todo momento por esto les ofrecemos varios productos para que
+ los puedan comprar en cualquier momento a un precio menor al que están en todos los centros comerciales,mercados u otras tiendas.</p>
+    </div>
+ <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-lg-3">
+        <div class="card">
+          <img src="https://mundoconsciente.es/wp-content/uploads/2017/03/legumbres-1024x758.jpg" alt="Legumbres">
+          <div class="card-body">
+            <h5 class="card-title">Legumbres</h5>
+            <p class="card-text">Legumbres de excelente calidad y a bajo precio.</p>
+            <a href="#" class="btn btn-primary w-100">Ver Legumbres</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card">
+          <img src="https://s1.abcstatics.com/abc/www/multimedia/ciencia/2023/03/31/frutas-kfNH-RL11aJz79VzsPThFeaE6g5L-1200x840@abc.jpg" alt="Frutas">
+          <div class="card-body">
+            <h5 class="card-title">Frutas</h5>
+            <p class="card-text">Encuentra tus frutas favoritas, frescas y saludables.</p>
+            <a href="#" class="btn btn-primary w-100">Ver Frutas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card">
+          <img src="https://cdn.shopify.com/s/files/1/0271/8960/8525/files/5_verduras_que_te_ayudaran_a_bajar_de_peso_480x480.jpg?v=1675103142" alt="Verduras">
+          <div class="card-body">
+            <h5 class="card-title">Verduras</h5>
+            <p class="card-text">Verduras frescas para tus recetas favoritas.</p>
+            <a href="#" class="btn btn-primary w-100">Ver Verduras</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card">
+          <img src="https://laroussecocina.mx/wp-content/uploads/2022/08/Lunch_portada.jpg.webp" alt="Lunch">
+          <div class="card-body">
+            <h5 class="card-title">Lunch</h5>
+            <p class="card-text">Almuerzos saludables elaborados con nuestros productos.</p>
+            <a href="#" class="btn btn-primary w-100">Ver Lunch</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71GGBG99lpL._AC_UF894,1000_QL80_.jpg" alt="Recetario">
+          <div class="card-body">
+            <h5 class="card-title">Recetario</h5>
+            <p class="card-text">Aprende nuevas recetas con nuestros productos frescos.</p>
+            <a href="#" class="btn btn-primary w-100">Ver Recetario</a>
+          </div>
+        </div>
       </div>
     </div>
-
-
-    <div class="carousel-item">
-      <img src="https://www.worldvisionmexico.org.mx/hubfs/MX%20-%20Sitio%20Web%20AF25/MX%20-%20SUFICIENTE/Versi%C3%B3n%20A/Secci%C3%B3n%2004/Secci%C3%B3n%204%2C%20V1.jpg" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Tecnología Verde</h5>
-        <p>Herramientas modernas  para mejorar la producción.</p>
-      </div>
-    </div>
-
-
-    <div class="carousel-item">
-      <img src="https://www.abasturhub.com/img/blog/gastronomia-sostenible---gastronomia-sostenible.jpg" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Objetivos Globales</h5>
-        <p>Contribuyendo a un mundo más justo y ecológico.</p>
-      </div>
-    </div>
   </div>
-
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-
-<div class="card mb-3">
-  <div class="card-body text-center">
-    <img src="https://blogs.iadb.org/innovacion/wp-content/uploads/sites/32/2023/05/ilust-seguridad-alim.jpg" alt="...">
-    <h5 class="card-title mt-3">Innovación contra el Hambre</h5>
-    <p class="card-text">Agrotech busca reducir el hambre y mejorar la seguridad alimentaria mediante tecnología agrícola avanzada y sostenible.</p>
-    <a href="#" class="btn btn-primary">Saber más</a>
+ <div class="quote-card">
+    <blockquote class="blockquote mb-0">
+      <p>Todo esto está a tu disposición.</p>
+      <footer class="blockquote-footer text-light">
+        Unidos por un mundo sin hambre <cite title="Hambre Cero">Hambre Cero</cite>
+      </footer>
+    </blockquote>
   </div>
-</div>
-
-
-<footer>
-  <p>© 2025 Agrotech</p>
-</footer>
-
-
 </body>
-</html>
